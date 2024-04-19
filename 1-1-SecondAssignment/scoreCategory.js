@@ -1,4 +1,5 @@
 const scoreCategory = (studentScore) => {
+    
   // Storing student categories as object of "category"
   const category = {
     excellent: studentScore >= 90,
