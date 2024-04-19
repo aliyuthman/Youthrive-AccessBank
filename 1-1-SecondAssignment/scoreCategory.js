@@ -1,5 +1,5 @@
 const scoreCategory = (studentScore) => {
-    
+
   // Storing student categories as object of "category"
   const category = {
     excellent: studentScore >= 90,
@@ -24,7 +24,7 @@ const scoreCategory = (studentScore) => {
 };
 
 //saving the return results of the scoreCategory function in memory
-const studentCategory = scoreCategory(50);
+const studentCategory = scoreCategory('A');
 
 // printing to console
 console.log(studentCategory);

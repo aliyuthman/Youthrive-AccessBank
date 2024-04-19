@@ -1,11 +1,3 @@
-Write a JavaScript function named scoreCategory that takes a student's score as input and returns the corresponding category based on the following criteria:
-
-Score 90 or above: return "Excellent"
-Score 80-89: return "Very Good"
-Score 70-79: return "Pass"
-Score below 70: return "Fail".
-
-```js
 const utme2024Students = [
   {
     firstName: "John",
@@ -158,12 +150,33 @@ const utme2024Students = [
     gender: "Male",
   },
 ];
-```
 
-Assignment 1 = return all students who are from California.
+//Assignment 1 = return all students who are from California.
+const califoniaStudent = utme2024Students.filter(
+  (student) => student.state === "California"
+);
 
-Assignment 2 = return all female students.
+console.log(califoniaStudent);
 
-Assignment 3 return the firstName and score for each student.
+//Assignment 2 = return all female students.
+const femaleStudent = utme2024Students.filter(
+  (student) => student.gender === "Female"
+);
 
-Assignment 4 = Calculate the average score of all students.
+console.log(femaleStudent);
+
+//Assignment 3 return the firstName and score for each student.
+const firstNameAndScore = utme2024Students.map((student) => ({
+  name: student.firstName,
+  score: student.score,
+}));
+
+console.log(firstNameAndScore);
+
+//Assignment 4 = Calculate the average score of all students.
+const sumOfAllScores = utme2024Students.reduce(
+  (total, student) => total + student.score,
+  0
+);
+const avgScoreOfAllStudent = sumOfAllScores / utme2024Students.length;
+console.log(avgScoreOfAllStudent);
