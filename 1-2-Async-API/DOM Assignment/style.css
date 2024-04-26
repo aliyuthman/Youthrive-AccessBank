@@ -1,0 +1,23 @@
+img {
+  width: 400px;
+}
+
+.makeSquare {
+  border-radius: 0px;
+  border: 100px rgb(19, 255, 220) solid;
+}
+
+.makeRound {
+  border: 100px cyan solid;
+  width: 400px;
+  border-radius: 300px;
+}
+
+button {
+  max-width: fit-content;
+  height: 50px;
+
+  margin-top: 10px;
+
+  border-radius: 15px;
+}
