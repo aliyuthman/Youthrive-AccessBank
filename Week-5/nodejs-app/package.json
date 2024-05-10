@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "This app as contains inside the markdown file illustrate how to create a node.js app using yarn",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node dev"
+  },
+  "repository": "https://",
+  "author": "Aliyu Usman",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
